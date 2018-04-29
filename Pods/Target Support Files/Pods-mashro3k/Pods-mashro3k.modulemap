@@ -1,0 +1,6 @@
+framework module Pods_mashro3k {
+  umbrella header "Pods-mashro3k-umbrella.h"
+
+  export *
+  module * { export * }
+}
