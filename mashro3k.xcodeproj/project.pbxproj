@@ -11,9 +11,8 @@
 		B2B55061EBE633367C07E234 /* Pods_mashro3k.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3D6B3E462B4B8B2994E32 /* Pods_mashro3k.framework */; };
 		BDF76487ACECF5630E28469F /* Pods_mashro3kUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D483205EE62CD39AE1663C80 /* Pods_mashro3kUITests.framework */; };
 		C013DE052098914500017312 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE042098914500017312 /* LoginViewController.swift */; };
-		C013DE07209892B400017312 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE06209892B400017312 /* StartPageViewController.swift */; };
 		C013DE0C209899BD00017312 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE0A209899BD00017312 /* Constant.swift */; };
-		C013DE0D209899BD00017312 /* UrlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE0B209899BD00017312 /* UrlConstants.swift */; };
+		C013DE132098A32000017312 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE122098A32000017312 /* StartPageViewController.swift */; };
 		C06D31B0208BA70300B26364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D31AF208BA70300B26364 /* AppDelegate.swift */; };
 		C06D31B5208BA70300B26364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B3208BA70300B26364 /* Main.storyboard */; };
 		C06D31B7208BA70300B26364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B6208BA70300B26364 /* Assets.xcassets */; };
@@ -50,9 +49,9 @@
 		4D5C2339F74D9C3774B44BD7 /* Pods-mashro3kUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashro3kUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashro3kUITests/Pods-mashro3kUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5AE3D6B3E462B4B8B2994E32 /* Pods_mashro3k.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashro3k.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C013DE042098914500017312 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C013DE06209892B400017312 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		C013DE0A209899BD00017312 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		C013DE0B209899BD00017312 /* UrlConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlConstants.swift; sourceTree = "<group>"; };
+		C013DE122098A32000017312 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
+		C013DE152098B60E00017312 /* UIView+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
 		C06D31AC208BA70300B26364 /* mashro3k.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mashro3k.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06D31AF208BA70300B26364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06D31B4208BA70300B26364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		C06D31CF208BA70300B26364 /* mashro3kUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mashro3kUITests.swift; sourceTree = "<group>"; };
 		C06D31D1208BA70300B26364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0FB2F9B209885DC0097BAB7 /* mashro3k-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mashro3k-Bridging-Header.h"; sourceTree = "<group>"; };
-		C0FB2F9C209885DC0097BAB7 /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
 		C0FB2F9D209885DD0097BAB7 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		C0FB2F9E209885DD0097BAB7 /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
 		C0FB2F9F209885DD0097BAB7 /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				C013DE0A209899BD00017312 /* Constant.swift */,
-				C013DE0B209899BD00017312 /* UrlConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -228,7 +225,7 @@
 		C0FB2F98209882F00097BAB7 /* startPage */ = {
 			isa = PBXGroup;
 			children = (
-				C013DE06209892B400017312 /* StartPageViewController.swift */,
+				C013DE122098A32000017312 /* StartPageViewController.swift */,
 			);
 			path = startPage;
 			sourceTree = "<group>";
@@ -246,7 +243,7 @@
 			children = (
 				C0FB2F9D209885DD0097BAB7 /* Animation.h */,
 				C0FB2F9F209885DD0097BAB7 /* Animation.m */,
-				C0FB2F9C209885DC0097BAB7 /* UIView+Custom.h */,
+				C013DE152098B60E00017312 /* UIView+Custom.h */,
 				C0FB2F9E209885DD0097BAB7 /* UIView+Custom.m */,
 				C0FB2F9B209885DC0097BAB7 /* mashro3k-Bridging-Header.h */,
 			);
@@ -461,12 +458,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C013DE07209892B400017312 /* StartPageViewController.swift in Sources */,
 				C0FB2FA0209885DD0097BAB7 /* UIView+Custom.m in Sources */,
-				C013DE0D209899BD00017312 /* UrlConstants.swift in Sources */,
 				C0FB2FA1209885DD0097BAB7 /* Animation.m in Sources */,
 				C013DE052098914500017312 /* LoginViewController.swift in Sources */,
 				C06D31B0208BA70300B26364 /* AppDelegate.swift in Sources */,
+				C013DE132098A32000017312 /* StartPageViewController.swift in Sources */,
 				C013DE0C209899BD00017312 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
