@@ -15,6 +15,11 @@ pod 'NVActivityIndicatorView'
 
 # keyboardNtextV
 pod 'IQKeyboardManagerSwift'
+pod 'Firebase/Auth'
+pod 'JSONModel'
+pod 'Firebase/Database'
+pod 'Firebase/Core'
+pod 'CodableFirebase'
 
 
   target 'mashro3kTests' do
