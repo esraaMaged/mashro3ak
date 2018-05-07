@@ -21,6 +21,16 @@ class StartPageViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //addBoraders
+        Animation.borderView(loginBtn, withBorderColor: .white, andWidth: 2)
+        Animation.roundCorner(for: loginBtn, withAngle: 14)
+        
+        Animation.borderView(signUpBtn, withBorderColor: .white, andWidth: 2)
+        Animation.roundCorner(for: signUpBtn, withAngle: 14)
+        
+        Animation.borderView(abtUsBtn, withBorderColor: .white, andWidth: 2)
+        Animation.roundCorner(for: abtUsBtn, withAngle: 14)
     }
 
     override func didReceiveMemoryWarning() {
