@@ -25,6 +25,8 @@ class LoginViewController: BaseViewController {
     }
     
     private func setUI(){
+        self.title = "Log in"
+
         //addBoraders
         Animation.borderView(mailTxtFld, withBorderColor: hexStringToUIColor(hex: BLUE_COLOR), andWidth: 2)
         Animation.roundCorner(for: mailTxtFld, withAngle: 14)
