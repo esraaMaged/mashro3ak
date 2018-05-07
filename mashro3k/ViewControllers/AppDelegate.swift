@@ -20,7 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //keyboard
+<<<<<<< HEAD:mashro3k/ViewControllers/AppDelegate.swift
         IQKeyboardManager.shared.enable =  true
+=======
+//        IQKeyboardManager.shared.enable =  true
+        UINavigationBar.appearance().tintColor = UIColor.white
+
+        
+>>>>>>> master:mashro3k/AppDelegate.swift
         FirebaseApp.configure()
         
         return true
