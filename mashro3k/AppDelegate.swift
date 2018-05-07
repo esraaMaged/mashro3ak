@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //keyboard
 //        IQKeyboardManager.shared.enable =  true
+        UINavigationBar.appearance().tintColor = UIColor.white
+
+        
         FirebaseApp.configure()
         
         return true

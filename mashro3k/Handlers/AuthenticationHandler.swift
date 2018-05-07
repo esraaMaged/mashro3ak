@@ -13,6 +13,7 @@ import CodableFirebase
 
 class AuthenticationHandler{
      var ref: DatabaseReference!
+    
     func loginWithEmail(email:String, password:String, success: @escaping (User) -> (),fail: @escaping (Error) -> () ){
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if error != nil{
