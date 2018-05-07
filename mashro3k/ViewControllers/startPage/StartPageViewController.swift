@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartPageViewController: UIViewController {
+class StartPageViewController: BaseViewController {
 
     
     @IBOutlet weak var loginBtn: UIButton!
@@ -19,6 +19,7 @@ class StartPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "مشروعك"
 
         // Do any additional setup after loading the view.
     }

@@ -71,10 +71,10 @@ class LoginViewController: BaseViewController {
     {
     }
     
-    @IBAction func bkBtn(_ sender: Any)
-    {
-        dismiss(animated: false, completion: nil)
-    }
+//    @IBAction func bkBtn(_ sender: Any)
+//    {
+//        dismiss(animated: false, completion: nil)
+//    }
 
 
 }
