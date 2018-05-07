@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  mashro3k
+
+  Created by Mona Noaman on 5/7/18.
+  Copyright © 2018 EsraaEldaltony. All rights reserved.
+*/
+
+
+"Ok"="موافق";
+"Empty login error"="برجاء ادخال بيانات صحيحة.";
+"app name" = "مشروعك";

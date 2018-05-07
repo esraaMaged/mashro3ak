@@ -8,20 +8,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     @IBOutlet weak var mailTxtFld: UITextField!
     @IBOutlet weak var pwdTxtFld: UITextField!
     
     @IBOutlet weak var loginBtn: UIButton!
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUI()
+
+
+    }
+    
+    private func setUI(){
         //addBoraders
         Animation.borderView(mailTxtFld, withBorderColor: hexStringToUIColor(hex: BLUE_COLOR), andWidth: 2)
         Animation.roundCorner(for: mailTxtFld, withAngle: 14)
@@ -30,20 +33,21 @@ class LoginViewController: UIViewController {
         Animation.roundCorner(for: pwdTxtFld, withAngle: 14)
         
         Animation.roundCorner(for: loginBtn, withAngle: 14)
-
+        
         
         //add padding
         mailTxtFld.setLeftPaddingPoints(20)
         pwdTxtFld.setLeftPaddingPoints(20)
-
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
+
+   
     // MARK: - outlets
     
     @IBAction func forgotPwdBtn(_ sender: Any)
@@ -52,6 +56,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginBtn(_ sender: Any)
     {
+        if mailTxtFld.text == "" || pwdTxtFld.text == "" || !isValidEmail(testStr: mailTxtFld.text!){
+            self.showAlertWithMessage(msg: NSLocalizedString("Empty login error", comment: ""))
+        }else{
+            AuthenticationHandler().loginWithEmail(email: mailTxtFld.text!, password: pwdTxtFld.text!, success: { user in
+                    print(user)
+                }, fail: { error in
+                    print(error)
+            })
+        }
     }
     
     @IBAction func signUpBtn(_ sender: Any)
@@ -62,18 +75,7 @@ class LoginViewController: UIViewController {
     {
         dismiss(animated: false, completion: nil)
     }
-    
-    
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 // MARK: - for padding
