@@ -49,7 +49,59 @@ class AuthenticationHandler{
             print(error.localizedDescription)
             fail(error)
         }
-        
+    }
+    
+    
+    // MARK: - Registration
+    func registerWithEmail( email:String, password:String, success: @escaping (String) -> (),fail: @escaping (Error) -> () ){
+
+        ref = Database.database().reference()
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            if error != nil{
+                fail(error!)
+            }else{
+                success((authResult?.uid)!)
+                
+            }
+
+        }
         
     }
+    func register(usersDict:[String:String], id : String, success: @escaping (User) -> (),fail: @escaping (Error) -> () ){
+
+            ref = Database.database().reference()
+            self.ref.child("users").child(id).setValue( usersDict)
+        }
+
+    // MARK: - getCountries
+
+    func getCountries( success: @escaping (Cities) -> (),fail: @escaping (Error) -> ())
+    {
+        ref = Database.database().reference()
+        ref.child("cities").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if snapshot.value == nil{
+                success(Cities())
+            }else{
+                do {
+//                    let value = snapshot.value
+//                    let user = try FirebaseDecoder().decode(User.self, from: value)
+                    success(Cities())
+                } catch let error {
+                    print(error)
+                }
+                
+                
+            }
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+            fail(error)
+        }
+    }
+    
+    
+    
+
 }

@@ -263,12 +263,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwR-3z-3eb">
+                                <rect key="frame" x="39" y="450" width="298" height="45"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dropDownBtn:" destination="QQQ-gO-oCK" eventType="touchUpInside" id="gsK-il-t1V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h2n-by-P9Z"/>
                     </view>
                     <connections>
                         <outlet property="confrimPwdTxtFld" destination="C9u-m6-avT" id="Dqn-BG-PXV"/>
+                        <outlet property="countryDropDown" destination="KwR-3z-3eb" id="hKi-XH-zar"/>
                         <outlet property="mailTxtFld" destination="SnQ-9h-89h" id="SN4-MS-MWQ"/>
                         <outlet property="nameTxtFlf" destination="QhP-9Z-bI2" id="QiQ-Qs-nDZ"/>
                         <outlet property="phoneTxtFld" destination="e8T-46-fKa" id="MRt-fx-jlW"/>

@@ -10,10 +10,12 @@
 		90A2522C6B0FF8BEEB316DC1 /* Pods_mashro3kTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1ABAC879732820A2A81118 /* Pods_mashro3kTests.framework */; };
 		B2B55061EBE633367C07E234 /* Pods_mashro3k.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3D6B3E462B4B8B2994E32 /* Pods_mashro3k.framework */; };
 		BDF76487ACECF5630E28469F /* Pods_mashro3kUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D483205EE62CD39AE1663C80 /* Pods_mashro3kUITests.framework */; };
+		C0108AAA20A0ED4000A3BD87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0108AA920A0ED4000A3BD87 /* AppDelegate.swift */; };
+		C0108AB020A0EDC100A3BD87 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0108AAF20A0EDC100A3BD87 /* RegistrationViewController.swift */; };
 		C013DE052098914500017312 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE042098914500017312 /* LoginViewController.swift */; };
 		C013DE0C209899BD00017312 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE0A209899BD00017312 /* Constant.swift */; };
 		C013DE132098A32000017312 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE122098A32000017312 /* StartPageViewController.swift */; };
-		C06D31B0208BA70300B26364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D31AF208BA70300B26364 /* AppDelegate.swift */; };
+		C015377920A60A6900C8594C /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C015377820A60A6900C8594C /* Cities.swift */; };
 		C06D31B5208BA70300B26364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B3208BA70300B26364 /* Main.storyboard */; };
 		C06D31B7208BA70300B26364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B6208BA70300B26364 /* Assets.xcassets */; };
 		C06D31BA208BA70300B26364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B8208BA70300B26364 /* LaunchScreen.storyboard */; };
@@ -53,12 +55,14 @@
 		3C51396DD67BD2DB1797CB07 /* Pods-mashro3k.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashro3k.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashro3k/Pods-mashro3k.debug.xcconfig"; sourceTree = "<group>"; };
 		4D5C2339F74D9C3774B44BD7 /* Pods-mashro3kUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashro3kUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashro3kUITests/Pods-mashro3kUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5AE3D6B3E462B4B8B2994E32 /* Pods_mashro3k.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashro3k.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0108AA920A0ED4000A3BD87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0108AAF20A0EDC100A3BD87 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		C013DE042098914500017312 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C013DE0A209899BD00017312 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C013DE122098A32000017312 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		C013DE152098B60E00017312 /* UIView+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
+		C015377820A60A6900C8594C /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		C06D31AC208BA70300B26364 /* mashro3k.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mashro3k.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C06D31AF208BA70300B26364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06D31B4208BA70300B26364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06D31B6208BA70300B26364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06D31B9208BA70300B26364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C0108AAE20A0EDAD00A3BD87 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C0108AAF20A0EDC100A3BD87 /* RegistrationViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		C013DE082098994F00017312 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +188,6 @@
 				C0FB2F99209885700097BAB7 /* external */,
 				C06D31DE208BA73700B26364 /* StoryBoards */,
 				C06D31DD208BA72400B26364 /* ViewControllers */,
-				C06D31AF208BA70300B26364 /* AppDelegate.swift */,
 				C06D31B8208BA70300B26364 /* LaunchScreen.storyboard */,
 				C06D31BB208BA70300B26364 /* Info.plist */,
 			);
@@ -204,7 +215,9 @@
 		C06D31DD208BA72400B26364 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C0108AA920A0ED4000A3BD87 /* AppDelegate.swift */,
 				F427175020A0847B0099DF19 /* BaseViewController.swift */,
+				C0108AAE20A0EDAD00A3BD87 /* Registration */,
 				C0FB2F98209882F00097BAB7 /* startPage */,
 				1A0D7A9B2095D05000BA37F5 /* login */,
 			);
@@ -281,6 +294,7 @@
 		F435FDE7209B42C9005AD58C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C015377820A60A6900C8594C /* Cities.swift */,
 				F435FDE8209B42D6005AD58C /* User.swift */,
 			);
 			path = Models;
@@ -297,8 +311,6 @@
 				C06D31A8208BA70300B26364 /* Sources */,
 				C06D31A9208BA70300B26364 /* Frameworks */,
 				C06D31AA208BA70300B26364 /* Resources */,
-				08A238D1B2E38F69D3D9A180 /* [CP] Embed Pods Frameworks */,
-				53A2FEC47803544A65E253D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,8 +329,6 @@
 				C06D31BC208BA70300B26364 /* Sources */,
 				C06D31BD208BA70300B26364 /* Frameworks */,
 				C06D31BE208BA70300B26364 /* Resources */,
-				7950D562D60AC97230F2AE32 /* [CP] Embed Pods Frameworks */,
-				4E98E89DAE81CE96866B8B55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,8 +348,6 @@
 				C06D31C7208BA70300B26364 /* Sources */,
 				C06D31C8208BA70300B26364 /* Frameworks */,
 				C06D31C9208BA70300B26364 /* Resources */,
-				951895FBA8F5060836593D46 /* [CP] Embed Pods Frameworks */,
-				8AC8607EE2DFAB77B9353ED8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,42 +436,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08A238D1B2E38F69D3D9A180 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-mashro3k/Pods-mashro3k-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3k/Pods-mashro3k-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1FB62881503F87BA94A95E32 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,36 +454,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E98E89DAE81CE96866B8B55 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3kTests/Pods-mashro3kTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53A2FEC47803544A65E253D4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3k/Pods-mashro3k-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		760A4B090656F05684D757ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,51 +470,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7950D562D60AC97230F2AE32 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3kTests/Pods-mashro3kTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8AC8607EE2DFAB77B9353ED8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3kUITests/Pods-mashro3kUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		951895FBA8F5060836593D46 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3kUITests/Pods-mashro3kUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A005A5C026B578FC186ACAB7 /* [CP] Check Pods Manifest.lock */ = {
@@ -604,10 +501,12 @@
 				F435FDE6209B3BF9005AD58C /* AuthenticationHandler.swift in Sources */,
 				C0FB2FA1209885DD0097BAB7 /* Animation.m in Sources */,
 				C013DE052098914500017312 /* LoginViewController.swift in Sources */,
+				C0108AB020A0EDC100A3BD87 /* RegistrationViewController.swift in Sources */,
 				F435FDE9209B42D6005AD58C /* User.swift in Sources */,
+				C015377920A60A6900C8594C /* Cities.swift in Sources */,
 				F427175120A0847B0099DF19 /* BaseViewController.swift in Sources */,
-				C06D31B0208BA70300B26364 /* AppDelegate.swift in Sources */,
 				C013DE132098A32000017312 /* StartPageViewController.swift in Sources */,
+				C0108AAA20A0ED4000A3BD87 /* AppDelegate.swift in Sources */,
 				C013DE0C209899BD00017312 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
