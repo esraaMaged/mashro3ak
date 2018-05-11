@@ -9,6 +9,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import Firebase
+import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //keyboard
         IQKeyboardManager.shared.enable =  true
+        
+        //dropdown
+        DropDown.startListeningToKeyboard()
+
         UINavigationBar.appearance().tintColor = UIColor.white
         FirebaseApp.configure()
         
