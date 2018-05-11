@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+
 
 class LoginViewController: BaseViewController {
 
@@ -15,12 +17,14 @@ class LoginViewController: BaseViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
     
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         setUI()
-
 
     }
     
@@ -61,6 +65,8 @@ class LoginViewController: BaseViewController {
         }else{
             AuthenticationHandler().loginWithEmail(email: mailTxtFld.text!, password: pwdTxtFld.text!, success: { user in
                     print(user)
+                UserDefaults.standard.set(user.id, forKey: "uid")
+                self.pushHome()
                 }, fail: { error in
                     print(error)
             })
@@ -71,12 +77,39 @@ class LoginViewController: BaseViewController {
     {
     }
     
+    private func pushHome(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
 //    @IBAction func bkBtn(_ sender: Any)
 //    {
 //        dismiss(animated: false, completion: nil)
 //    }
 
 
+}
+
+func fillData(){
+    if let path = Bundle.main.path(forResource: "data", ofType: "json") {
+        let peoplesArray = try! JSONSerialization.jsonObject(with: Data(contentsOf: URL(fileURLWithPath: path)), options: JSONSerialization.ReadingOptions()) as? [Any]
+        
+        var count = 0
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        for peopleDict in peoplesArray! {
+            
+            if let dict = peopleDict as? [String: String] {
+                ref.child("cities").child("\(count)").setValue(dict)
+
+                count = count + 1
+            }
+        }
+        
+    }
 }
 // MARK: - for padding
 

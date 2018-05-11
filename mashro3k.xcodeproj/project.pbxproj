@@ -26,6 +26,9 @@
 		F435FDE6209B3BF9005AD58C /* AuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435FDE5209B3BF9005AD58C /* AuthenticationHandler.swift */; };
 		F435FDE9209B42D6005AD58C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435FDE8209B42D6005AD58C /* User.swift */; };
 		F4F855D4209B851000E23E2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F855D3209B851000E23E2D /* GoogleService-Info.plist */; };
+		F4FFDCD120A0EE2F0083ED44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFDCD020A0EE2F0083ED44 /* HomeViewController.swift */; };
+		F4FFDCD320A0F2340083ED44 /* Mona.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FFDCD220A0F2340083ED44 /* Mona.storyboard */; };
+		F4FFDCD520A5C11C0083ED44 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F4FFDCD420A5C11C0083ED44 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		F435FDE5209B3BF9005AD58C /* AuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHandler.swift; sourceTree = "<group>"; };
 		F435FDE8209B42D6005AD58C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F4F855D3209B851000E23E2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4FFDCD020A0EE2F0083ED44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4FFDCD220A0F2340083ED44 /* Mona.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mona.storyboard; sourceTree = "<group>"; };
+		F4FFDCD420A5C11C0083ED44 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,7 @@
 				F427175020A0847B0099DF19 /* BaseViewController.swift */,
 				C0FB2F98209882F00097BAB7 /* startPage */,
 				1A0D7A9B2095D05000BA37F5 /* login */,
+				F4FFDCD020A0EE2F0083ED44 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -215,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				C06D31B3208BA70300B26364 /* Main.storyboard */,
+				F4FFDCD220A0F2340083ED44 /* Mona.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 		F427175220A085690099DF19 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4FFDCD420A5C11C0083ED44 /* data.json */,
 				C06D31B6208BA70300B26364 /* Assets.xcassets */,
 				F4F855D3209B851000E23E2D /* GoogleService-Info.plist */,
 				F427175320A086240099DF19 /* Localizable.strings */,
@@ -404,10 +413,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F427175420A086240099DF19 /* Localizable.strings in Resources */,
+				F4FFDCD520A5C11C0083ED44 /* data.json in Resources */,
 				C06D31BA208BA70300B26364 /* LaunchScreen.storyboard in Resources */,
 				F4F855D4209B851000E23E2D /* GoogleService-Info.plist in Resources */,
 				C06D31B7208BA70300B26364 /* Assets.xcassets in Resources */,
 				C06D31B5208BA70300B26364 /* Main.storyboard in Resources */,
+				F4FFDCD320A0F2340083ED44 /* Mona.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +616,7 @@
 				C0FB2FA1209885DD0097BAB7 /* Animation.m in Sources */,
 				C013DE052098914500017312 /* LoginViewController.swift in Sources */,
 				F435FDE9209B42D6005AD58C /* User.swift in Sources */,
+				F4FFDCD120A0EE2F0083ED44 /* HomeViewController.swift in Sources */,
 				F427175120A0847B0099DF19 /* BaseViewController.swift in Sources */,
 				C06D31B0208BA70300B26364 /* AppDelegate.swift in Sources */,
 				C013DE132098A32000017312 /* StartPageViewController.swift in Sources */,
