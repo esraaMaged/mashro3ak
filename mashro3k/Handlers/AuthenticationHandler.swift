@@ -67,34 +67,34 @@ class AuthenticationHandler{
         }
         
     }
-    func register(usersDict:[String:String], id : String, success: @escaping (User) -> (),fail: @escaping (Error) -> () ){
-
+    func register(usersDict:[String:String], id : String, success: @escaping (String) -> (),fail: @escaping (Error) -> () ){
+        do {
             ref = Database.database().reference()
             self.ref.child("users").child(id).setValue( usersDict)
+            success("done")
+        } catch let error {
+            print(error)
         }
+    }
 
     // MARK: - getCountries
 
-    func getCountries( success: @escaping (Cities) -> (),fail: @escaping (Error) -> ())
+    func getCountries( success: @escaping ([Cities]) -> (),fail: @escaping (Error) -> ())
     {
         ref = Database.database().reference()
         ref.child("cities").observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             if snapshot.value == nil{
-                success(Cities())
+                success([Cities()])
             }else{
                 do {
-//                    let value = snapshot.value
-//                    let user = try FirebaseDecoder().decode(User.self, from: value)
-                    success(Cities())
+                    let value = snapshot.value
+                    let cities = try FirebaseDecoder().decode([Cities].self, from: value)
+                    success(cities)
                 } catch let error {
                     print(error)
                 }
-                
-                
             }
-            
-            // ...
         }) { (error) in
             print(error.localizedDescription)
             fail(error)
