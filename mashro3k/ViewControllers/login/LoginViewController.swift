@@ -22,7 +22,7 @@ class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Login"
         
         setUI()
 
@@ -56,6 +56,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func forgotPwdBtn(_ sender: Any)
     {
+        pushForgotPassword()
     }
     
     @IBAction func loginBtn(_ sender: Any)
@@ -78,9 +79,18 @@ class LoginViewController: BaseViewController {
     }
     
     private func pushHome(){
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Mona", bundle:nil)
         
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    
+    private func pushForgotPassword(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Mona", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Forgot") as! ForgotPasswordViewController
         
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }

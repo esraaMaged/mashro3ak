@@ -25,6 +25,7 @@
 		F427175420A086240099DF19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F427175320A086240099DF19 /* Localizable.strings */; };
 		F435FDE6209B3BF9005AD58C /* AuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435FDE5209B3BF9005AD58C /* AuthenticationHandler.swift */; };
 		F435FDE9209B42D6005AD58C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435FDE8209B42D6005AD58C /* User.swift */; };
+		F4857E6320A64D7D00F88F3E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4857E6220A64D7D00F88F3E /* ForgotPasswordViewController.swift */; };
 		F4F855D4209B851000E23E2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F855D3209B851000E23E2D /* GoogleService-Info.plist */; };
 		F4FFDCD120A0EE2F0083ED44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFDCD020A0EE2F0083ED44 /* HomeViewController.swift */; };
 		F4FFDCD320A0F2340083ED44 /* Mona.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FFDCD220A0F2340083ED44 /* Mona.storyboard */; };
@@ -82,6 +83,7 @@
 		F427175320A086240099DF19 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F435FDE5209B3BF9005AD58C /* AuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHandler.swift; sourceTree = "<group>"; };
 		F435FDE8209B42D6005AD58C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F4857E6220A64D7D00F88F3E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		F4F855D3209B851000E23E2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4FFDCD020A0EE2F0083ED44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4FFDCD220A0F2340083ED44 /* Mona.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mona.storyboard; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				C0FB2F98209882F00097BAB7 /* startPage */,
 				1A0D7A9B2095D05000BA37F5 /* login */,
 				F4FFDCD020A0EE2F0083ED44 /* HomeViewController.swift */,
+				F4857E6220A64D7D00F88F3E /* ForgotPasswordViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 			files = (
 				C0FB2FA0209885DD0097BAB7 /* UIView+Custom.m in Sources */,
 				F435FDE6209B3BF9005AD58C /* AuthenticationHandler.swift in Sources */,
+				F4857E6320A64D7D00F88F3E /* ForgotPasswordViewController.swift in Sources */,
 				C0FB2FA1209885DD0097BAB7 /* Animation.m in Sources */,
 				C013DE052098914500017312 /* LoginViewController.swift in Sources */,
 				F435FDE9209B42D6005AD58C /* User.swift in Sources */,
