@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController , NVActivityIndicatorViewable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +20,27 @@ class BaseViewController: UIViewController {
 
     }
     
+    // MARK: - alert
     func showAlertWithMessage(msg:String){
         let alert = UIAlertController(title: NSLocalizedString("app name", comment: ""), message: msg, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: nil))
         
         self.present(alert, animated: true)
+    }
+    
+    
+    // MARK: - loading
+    func startLoading()
+    {
+        let size = CGSize(width: 30, height:30)
+        startAnimating(size, message: "", type: NVActivityIndicatorType.ballSpinFadeLoader, color: UIColor.white ,minimumDisplayTime: 3)
+        
+    }
+    func stopLoading()
+    {
+        stopAnimating()
+        
     }
 
 }

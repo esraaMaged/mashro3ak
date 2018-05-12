@@ -20,29 +20,18 @@ class RegistrationViewController: BaseViewController {
     @IBOutlet weak var countryDropDown: UIButton!
     
     let dropDown = DropDown()
+    var cititesArr = [Cities()]
+    var selectedCityIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUI()
-        setDropDown()
         getCitiesService()
     }
 
     // MARK: - inApp
-    private func setDropDown(){
-        // The view to which the drop down will appear on
-        dropDown.anchorView = countryDropDown // UIView or UIBarButtonItem
-        
-        // The list of items to display. Can be changed dynamically
-        dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
-        dropDown.selectRow(0)
-        self.countryDropDown.setTitle(dropDown.selectedItem, for: .normal)
-
-        dropDown.selectionAction = { [weak self] (index, item) in
-            self?.countryDropDown.setTitle(item, for: .normal)
-        }
-    }
+   
     private func setUI(){
 
         self.title = "Sign In"
@@ -76,7 +65,23 @@ class RegistrationViewController: BaseViewController {
 
         
     }
-    
+    // MARK: - dropDown
+
+    private func setDropDown(cityNames :  [String]){
+        // The view to which the drop down will appear on
+        dropDown.anchorView = countryDropDown // UIView or UIBarButtonItem
+        
+        // The list of items to display. Can be changed dynamically
+        dropDown.dataSource = cityNames
+        dropDown.selectRow(0)
+        self.countryDropDown.setTitle(dropDown.selectedItem, for: .normal)
+        
+        dropDown.selectionAction = { [weak self] (index, item) in
+            self?.countryDropDown.setTitle(item, for: .normal)
+            self?.selectedCityIndex = index
+            
+        }
+    }
     
     // MARK: - Actions
 
@@ -107,6 +112,7 @@ class RegistrationViewController: BaseViewController {
        
         else
         {
+            startLoading()
             AuthenticationHandler().registerWithEmail(email: mailTxtFld.text!, password: pwdTxtFld.text!, success: { user in
                 print(user)
                 let userDict : [String : String] = ["id": user,
@@ -114,17 +120,26 @@ class RegistrationViewController: BaseViewController {
                                                     "email": self.mailTxtFld.text!,
                                                     "imageUrl": "",
                                                     "phoneNumber": self.phoneTxtFld.text!,
-                                                    "countryCode": "0",
-                                                    "country":"eg"]
+                                                    "countryCode": self.cititesArr[self.selectedCityIndex].code ?? "0",
+                                                    "country": self.cititesArr[self.selectedCityIndex].name ?? "eg"]
                 
                 AuthenticationHandler().register(usersDict: userDict, id: user, success: { user in
                     print(user)
+                    self.stopLoading()
+                    self.showAlertWithMessage(msg: NSLocalizedString("userRegistered", comment: ""))
+                   // TODO: redirect to mainPage
                 }, fail: { error in
                     print(error)
+                    self.stopLoading()
+                    self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
+
                 })
 
             }, fail: { error in
                 print(error)
+                self.stopLoading()
+                self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
+
             })
         } 
     }
@@ -183,12 +198,25 @@ class RegistrationViewController: BaseViewController {
     
     private func getCitiesService()
     {
+        startLoading()
         AuthenticationHandler().getCountries(success:{ cities in
-            print(cities)
-            
+            self.stopLoading()
+            self.handleCities(cities: cities)
         }, fail: { error in
             print(error)
+            self.stopLoading()
+            self.dismiss(animated: true, completion: nil)
+            self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
         })
+    }
+    private func handleCities(cities : [Cities])
+    {
+        cititesArr = cities
+        var citiesNames = [String]()
+        for i in cititesArr {
+            citiesNames.append(i.name ?? "")
+        }
+        self.setDropDown(cityNames: citiesNames)
     }
     
     /*
