@@ -15,6 +15,8 @@ pod 'NVActivityIndicatorView'
 
 # keyboardNtextV
 pod 'IQKeyboardManagerSwift'
+
+#firebases
 pod 'Firebase/Auth'
 pod 'JSONModel'
 pod 'Firebase/Database'
