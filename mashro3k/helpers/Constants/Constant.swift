@@ -19,6 +19,8 @@ let SCREEN_HEIGHT  = screenSize.height
 
 
 let BLUE_COLOR = "#198EDA"
+let lIGHT_GRAY_COLOR = "#E5E9E3"
+
 
 
 // to use color from hex value

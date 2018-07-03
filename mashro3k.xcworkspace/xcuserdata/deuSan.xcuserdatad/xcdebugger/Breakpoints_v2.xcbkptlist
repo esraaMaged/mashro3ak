@@ -9,60 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.059517"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "registerWithEmail(email:password:success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.059918"
+            timestampString = "552249240.319979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "signInBtn(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.060248"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "signInBtn(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.060521"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "signInBtn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.060787"
+            timestampString = "552254454.585987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "registerWithEmail(email:password:success:fail:)"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "addIdeas(ideaDict:id:success:fail:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,220 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.06106"
+            timestampString = "552254454.586315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "getCountries(success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.0613"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "getCountries(success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.061535"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "getCitiesService()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.061783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "getCitiesService()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.062024"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "getCountries(success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.062309"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "getCountries(success:fail:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mashro3k.AuthenticationHandler.getCountries(success: (mashro3k.Cities) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
-                  moduleName = "mashro3k"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deuSan/Documents/freelance%20work/mashro3ak/mashro3k/Handlers/AuthenticationHandler.swift"
-                  timestampString = "547762879.226869"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "219">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in mashro3k.AuthenticationHandler.getCountries(success: (mashro3k.Cities) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
-                  moduleName = "mashro3k"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deuSan/Documents/freelance%20work/mashro3ak/mashro3k/Handlers/AuthenticationHandler.swift"
-                  timestampString = "547762879.22888"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "25">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.0626251"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "registerWithEmail(email:password:success:fail:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mashro3k.AuthenticationHandler.registerWithEmail(email: Swift.String, password: Swift.String, success: (Swift.String) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
-                  moduleName = "mashro3k"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deuSan/Documents/freelance%20work/mashro3ak/mashro3k/Handlers/AuthenticationHandler.swift"
-                  timestampString = "547762879.233463"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "302">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mashro3k.AuthenticationHandler.registerWithEmail(email: Swift.String, password: Swift.String, success: (Swift.String) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
-                  moduleName = "mashro3k"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deuSan/Documents/freelance%20work/mashro3ak/mashro3k/Handlers/AuthenticationHandler.swift"
-                  timestampString = "547762879.235731"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "37">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/Handlers/AuthenticationHandler.swift"
-            timestampString = "547762879.062857"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "register(usersDict:id:success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.063086"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "signInBtn(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mashro3k/ViewControllers/Registration/RegistrationViewController.swift"
-            timestampString = "547762879.063337"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "signInBtn(_:)"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "addIdeas(ideaDict:id:success:fail:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

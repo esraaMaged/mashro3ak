@@ -16,11 +16,16 @@
 		C013DE0C209899BD00017312 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE0A209899BD00017312 /* Constant.swift */; };
 		C013DE132098A32000017312 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013DE122098A32000017312 /* StartPageViewController.swift */; };
 		C015377920A60A6900C8594C /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C015377820A60A6900C8594C /* Cities.swift */; };
+		C018C84D20EAA8B1003C1948 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018C84C20EAA8B1003C1948 /* SuccessViewController.swift */; };
+		C018C85220EAAECC003C1948 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018C85120EAAECC003C1948 /* ProfileViewController.swift */; };
 		C06D31B5208BA70300B26364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B3208BA70300B26364 /* Main.storyboard */; };
 		C06D31B7208BA70300B26364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B6208BA70300B26364 /* Assets.xcassets */; };
 		C06D31BA208BA70300B26364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06D31B8208BA70300B26364 /* LaunchScreen.storyboard */; };
 		C06D31C5208BA70300B26364 /* mashro3kTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D31C4208BA70300B26364 /* mashro3kTests.swift */; };
 		C06D31D0208BA70300B26364 /* mashro3kUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D31CF208BA70300B26364 /* mashro3kUITests.swift */; };
+		C099BB5B20A7115700A92DE9 /* IdeasNSuccesNProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C099BB5A20A7115700A92DE9 /* IdeasNSuccesNProfileStoryboard.storyboard */; };
+		C099BB5E20A7120800A92DE9 /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099BB5D20A7120800A92DE9 /* IdeaViewController.swift */; };
+		C099BB6020A72E0F00A92DE9 /* Ideas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099BB5F20A72E0F00A92DE9 /* Ideas.swift */; };
 		C0FB2FA0209885DD0097BAB7 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB2F9E209885DD0097BAB7 /* UIView+Custom.m */; };
 		C0FB2FA1209885DD0097BAB7 /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB2F9F209885DD0097BAB7 /* Animation.m */; };
 		F427175120A0847B0099DF19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427175020A0847B0099DF19 /* BaseViewController.swift */; };
@@ -62,6 +67,8 @@
 		C013DE122098A32000017312 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		C013DE152098B60E00017312 /* UIView+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
 		C015377820A60A6900C8594C /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		C018C84C20EAA8B1003C1948 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		C018C85120EAAECC003C1948 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C06D31AC208BA70300B26364 /* mashro3k.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mashro3k.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06D31B4208BA70300B26364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06D31B6208BA70300B26364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +80,9 @@
 		C06D31CB208BA70300B26364 /* mashro3kUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mashro3kUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06D31CF208BA70300B26364 /* mashro3kUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mashro3kUITests.swift; sourceTree = "<group>"; };
 		C06D31D1208BA70300B26364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C099BB5A20A7115700A92DE9 /* IdeasNSuccesNProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdeasNSuccesNProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		C099BB5D20A7120800A92DE9 /* IdeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
+		C099BB5F20A72E0F00A92DE9 /* Ideas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ideas.swift; sourceTree = "<group>"; };
 		C0FB2F9B209885DC0097BAB7 /* mashro3k-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mashro3k-Bridging-Header.h"; sourceTree = "<group>"; };
 		C0FB2F9D209885DD0097BAB7 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		C0FB2F9E209885DD0097BAB7 /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
@@ -156,6 +166,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		C018C85020EAAE62003C1948 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C018C85120EAAECC003C1948 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		C06D31A3208BA70300B26364 = {
 			isa = PBXGroup;
 			children = (
@@ -215,8 +233,10 @@
 		C06D31DD208BA72400B26364 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C018C85020EAAE62003C1948 /* Profile */,
 				C0108AA920A0ED4000A3BD87 /* AppDelegate.swift */,
 				F427175020A0847B0099DF19 /* BaseViewController.swift */,
+				C099BB5C20A711E400A92DE9 /* ShareIdeaNSuccess */,
 				C0108AAE20A0EDAD00A3BD87 /* Registration */,
 				C0FB2F98209882F00097BAB7 /* startPage */,
 				1A0D7A9B2095D05000BA37F5 /* login */,
@@ -228,8 +248,18 @@
 			isa = PBXGroup;
 			children = (
 				C06D31B3208BA70300B26364 /* Main.storyboard */,
+				C099BB5A20A7115700A92DE9 /* IdeasNSuccesNProfileStoryboard.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C099BB5C20A711E400A92DE9 /* ShareIdeaNSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				C018C84C20EAA8B1003C1948 /* SuccessViewController.swift */,
+				C099BB5D20A7120800A92DE9 /* IdeaViewController.swift */,
+			);
+			path = ShareIdeaNSuccess;
 			sourceTree = "<group>";
 		};
 		C0FB2F98209882F00097BAB7 /* startPage */ = {
@@ -294,6 +324,7 @@
 		F435FDE7209B42C9005AD58C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C099BB5F20A72E0F00A92DE9 /* Ideas.swift */,
 				C015377820A60A6900C8594C /* Cities.swift */,
 				F435FDE8209B42D6005AD58C /* User.swift */,
 			);
@@ -311,6 +342,7 @@
 				C06D31A8208BA70300B26364 /* Sources */,
 				C06D31A9208BA70300B26364 /* Frameworks */,
 				C06D31AA208BA70300B26364 /* Resources */,
+				CC4500B6660591B8FEF46E81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F427175420A086240099DF19 /* Localizable.strings in Resources */,
+				C099BB5B20A7115700A92DE9 /* IdeasNSuccesNProfileStoryboard.storyboard in Resources */,
 				C06D31BA208BA70300B26364 /* LaunchScreen.storyboard in Resources */,
 				F4F855D4209B851000E23E2D /* GoogleService-Info.plist in Resources */,
 				C06D31B7208BA70300B26364 /* Assets.xcassets in Resources */,
@@ -490,6 +523,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CC4500B6660591B8FEF46E81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mashro3k/Pods-mashro3k-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashro3k/Pods-mashro3k-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -498,14 +569,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0FB2FA0209885DD0097BAB7 /* UIView+Custom.m in Sources */,
+				C099BB6020A72E0F00A92DE9 /* Ideas.swift in Sources */,
+				C099BB5E20A7120800A92DE9 /* IdeaViewController.swift in Sources */,
 				F435FDE6209B3BF9005AD58C /* AuthenticationHandler.swift in Sources */,
 				C0FB2FA1209885DD0097BAB7 /* Animation.m in Sources */,
 				C013DE052098914500017312 /* LoginViewController.swift in Sources */,
 				C0108AB020A0EDC100A3BD87 /* RegistrationViewController.swift in Sources */,
 				F435FDE9209B42D6005AD58C /* User.swift in Sources */,
+				C018C84D20EAA8B1003C1948 /* SuccessViewController.swift in Sources */,
 				C015377920A60A6900C8594C /* Cities.swift in Sources */,
 				F427175120A0847B0099DF19 /* BaseViewController.swift in Sources */,
 				C013DE132098A32000017312 /* StartPageViewController.swift in Sources */,
+				C018C85220EAAECC003C1948 /* ProfileViewController.swift in Sources */,
 				C0108AAA20A0ED4000A3BD87 /* AppDelegate.swift in Sources */,
 				C013DE0C209899BD00017312 /* Constant.swift in Sources */,
 			);

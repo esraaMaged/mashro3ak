@@ -23,6 +23,9 @@ pod 'Firebase/Database'
 pod 'Firebase/Core'
 pod 'CodableFirebase'
 
+#dropDown
+pod 'DropDown'
+
 
   target 'mashro3kTests' do
     inherit! :search_paths
