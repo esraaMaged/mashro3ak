@@ -116,7 +116,18 @@ class AuthenticationHandler{
             fail(error)
         }
     }
-    
+    // MARK: - ideas
+
+    func addIdeas(ideaDict:[String:String], id : String, success: @escaping (String) -> (),fail: @escaping (Error) -> () ){
+        do {
+            ref = Database.database().reference()
+            self.ref.child("ideas").child(id).child("20").setValue( ideaDict)
+
+            success("done")
+        } catch let error {
+            print(error)
+        }
+    }
     
     
 

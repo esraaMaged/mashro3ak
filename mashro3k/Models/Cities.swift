@@ -12,5 +12,4 @@ class Cities:Codable{
     var code:String!
     var name:String!
     var nativeName:String!
-    
 }
