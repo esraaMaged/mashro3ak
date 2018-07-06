@@ -139,10 +139,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOy-AR-yaW">
-                                <rect key="frame" x="275" y="544" width="76" height="30"/>
+                                <rect key="frame" x="275" y="568" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sigh up">
+                                <state key="normal" title="Sign up">
                                     <color key="titleColor" red="0.098039215690000001" green="0.5568627451" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -151,17 +151,44 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWS-8M-eHa">
-                                <rect key="frame" x="108" y="549" width="159" height="21"/>
+                                <rect key="frame" x="108" y="573" width="159" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhR-eZ-ZvV">
+                                <rect key="frame" x="16" y="513" width="150" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fbLogin:" destination="oQ7-NL-gU0" eventType="touchUpInside" id="Bfm-ty-Sl3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJJ-nm-Faj">
+                                <rect key="frame" x="209" y="513" width="150" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86340022208121825" green="0.12915673933952534" blue="0.0074595910113963906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Google+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleLogin:" destination="oQ7-NL-gU0" eventType="touchUpInside" id="dIv-gW-jZJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IHG-bp-WNY"/>
                     </view>
                     <connections>
+                        <outlet property="fbBtn" destination="mhR-eZ-ZvV" id="dMN-vJ-nyi"/>
+                        <outlet property="googleBtn" destination="JJJ-nm-Faj" id="e6D-xd-yEW"/>
+                        <outlet property="googleLogin" destination="JJJ-nm-Faj" id="4NU-P1-4mL"/>
                         <outlet property="loginBtn" destination="unO-c8-EVK" id="w0F-RZ-yIT"/>
                         <outlet property="mailTxtFld" destination="Ju8-gu-WrZ" id="t9J-KB-q7G"/>
                         <outlet property="pwdTxtFld" destination="gLV-yz-OiY" id="Rei-Jk-F72"/>
@@ -169,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBR-F6-Gly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="133"/>
+            <point key="canvasLocation" x="912.79999999999995" y="132.68365817091455"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="tl7-F8-Eh0">
