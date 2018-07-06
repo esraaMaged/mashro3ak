@@ -1,0 +1,249 @@
+[{"name":"Afghanistan","nativeName":"افغانستان","code":"93"}
+,{"name":"Åland Islands","nativeName":"Åland","code":"358"}
+,{"name":"Albania","nativeName":"Shqipëria","code":"355"}
+,{"name":"Algeria","nativeName":"الجزائر","code":"213"}
+,{"name":"American Samoa","nativeName":"American Samoa","code":"1684"}
+,{"name":"Andorra","nativeName":"Andorra","code":"376"}
+,{"name":"Angola","nativeName":"Angola","code":"244"}
+,{"name":"Anguilla","nativeName":"Anguilla","code":"1264"}
+,{"name":"Antarctica","nativeName":"Antarctica","code":"672"}
+,{"name":"Antigua and Barbuda","nativeName":"Antigua and Barbuda","code":"1268"}
+,{"name":"Argentina","nativeName":"Argentina","code":"54"}
+,{"name":"Armenia","nativeName":"Հայաստան","code":"374"}
+,{"name":"Aruba","nativeName":"Aruba","code":"297"}
+,{"name":"Australia","nativeName":"Australia","code":"61"}
+,{"name":"Austria","nativeName":"Österreich","code":"43"}
+,{"name":"Azerbaijan","nativeName":"Azərbaycan","code":"994"}
+,{"name":"Bahamas","nativeName":"Bahamas","code":"1242"}
+,{"name":"Bahrain","nativeName":"‏البحرين","code":"973"}
+,{"name":"Bangladesh","nativeName":"Bangladesh","code":"880"}
+,{"name":"Barbados","nativeName":"Barbados","code":"1246"}
+,{"name":"Belarus","nativeName":"Белару́сь","code":"375"}
+,{"name":"Belgium","nativeName":"België","code":"32"}
+,{"name":"Belize","nativeName":"Belize","code":"501"}
+,{"name":"Benin","nativeName":"Bénin","code":"229"}
+,{"name":"Bermuda","nativeName":"Bermuda","code":"1441"}
+,{"name":"Bhutan","nativeName":"ʼbrug-yul","code":"975"}
+,{"name":"Bolivia (Plurinational State of)","nativeName":"Bolivia","code":"591"}
+,{"name":"Bonaire, Sint Eustatius and Saba","nativeName":"Bonaire","code":"5997"}
+,{"name":"Bosnia and Herzegovina","nativeName":"Bosna i Hercegovina","code":"387"}
+,{"name":"Botswana","nativeName":"Botswana","code":"267"}
+,{"name":"Bouvet Island","nativeName":"Bouvetøya","code":""}
+,{"name":"Brazil","nativeName":"Brasil","code":"55"}
+,{"name":"British Indian Ocean Territory","nativeName":"British Indian Ocean Territory","code":"246"}
+,{"name":"United States Minor Outlying Islands","nativeName":"United States Minor Outlying Islands","code":""}
+,{"name":"Virgin Islands (British)","nativeName":"British Virgin Islands","code":"1284"}
+,{"name":"Virgin Islands (U.S.)","nativeName":"Virgin Islands of the United States","code":"1 340"}
+,{"name":"Brunei Darussalam","nativeName":"Negara Brunei Darussalam","code":"673"}
+,{"name":"Bulgaria","nativeName":"България","code":"359"}
+,{"name":"Burkina Faso","nativeName":"Burkina Faso","code":"226"}
+,{"name":"Burundi","nativeName":"Burundi","code":"257"}
+,{"name":"Cambodia","nativeName":"Kâmpŭchéa","code":"855"}
+,{"name":"Cameroon","nativeName":"Cameroon","code":"237"}
+,{"name":"Canada","nativeName":"Canada","code":"1"}
+,{"name":"Cabo Verde","nativeName":"Cabo Verde","code":"238"}
+,{"name":"Cayman Islands","nativeName":"Cayman Islands","code":"1345"}
+,{"name":"Central African Republic","nativeName":"Ködörösêse tî Bêafrîka","code":"236"}
+,{"name":"Chad","nativeName":"Tchad","code":"235"}
+,{"name":"Chile","nativeName":"Chile","code":"56"}
+,{"name":"China","nativeName":"中国","code":"86"}
+,{"name":"Christmas Island","nativeName":"Christmas Island","code":"61"}
+,{"name":"Cocos (Keeling) Islands","nativeName":"Cocos (Keeling) Islands","code":"61"}
+,{"name":"Colombia","nativeName":"Colombia","code":"57"}
+,{"name":"Comoros","nativeName":"Komori","code":"269"}
+,{"name":"Congo","nativeName":"République du Congo","code":"242"}
+,{"name":"Congo (Democratic Republic of the)","nativeName":"République démocratique du Congo","code":"243"}
+,{"name":"Cook Islands","nativeName":"Cook Islands","code":"682"}
+,{"name":"Costa Rica","nativeName":"Costa Rica","code":"506"}
+,{"name":"Croatia","nativeName":"Hrvatska","code":"385"}
+,{"name":"Cuba","nativeName":"Cuba","code":"53"}
+,{"name":"Curaçao","nativeName":"Curaçao","code":"599"}
+,{"name":"Cyprus","nativeName":"Κύπρος","code":"357"}
+,{"name":"Czech Republic","nativeName":"Česká republika","code":"420"}
+,{"name":"Denmark","nativeName":"Danmark","code":"45"}
+,{"name":"Djibouti","nativeName":"Djibouti","code":"253"}
+,{"name":"Dominica","nativeName":"Dominica","code":"1767"}
+,{"name":"Dominican Republic","nativeName":"República Dominicana","code":"1809,1829,1849"}
+,{"name":"Ecuador","nativeName":"Ecuador","code":"593"}
+,{"name":"Egypt","nativeName":"مصر‎","code":"20"}
+,{"name":"El Salvador","nativeName":"El Salvador","code":"503"}
+,{"name":"Equatorial Guinea","nativeName":"Guinea Ecuatorial","code":"240"}
+,{"name":"Eritrea","nativeName":"ኤርትራ","code":"291"}
+,{"name":"Estonia","nativeName":"Eesti","code":"372"}
+,{"name":"Ethiopia","nativeName":"ኢትዮጵያ","code":"251"}
+,{"name":"Falkland Islands (Malvinas)","nativeName":"Falkland Islands","code":"500"}
+,{"name":"Faroe Islands","nativeName":"Føroyar","code":"298"}
+,{"name":"Fiji","nativeName":"Fiji","code":"679"}
+,{"name":"Finland","nativeName":"Suomi","code":"358"}
+,{"name":"France","nativeName":"France","code":"33"}
+,{"name":"French Guiana","nativeName":"Guyane française","code":"594"}
+,{"name":"French Polynesia","nativeName":"Polynésie française","code":"689"}
+,{"name":"French Southern Territories","nativeName":"Territoire des Terres australes et antarctiques françaises","code":""}
+,{"name":"Gabon","nativeName":"Gabon","code":"241"}
+,{"name":"Gambia","nativeName":"Gambia","code":"220"}
+,{"name":"Georgia","nativeName":"საქართველო","code":"995"}
+,{"name":"Germany","nativeName":"Deutschland","code":"49"}
+,{"name":"Ghana","nativeName":"Ghana","code":"233"}
+,{"name":"Gibraltar","nativeName":"Gibraltar","code":"350"}
+,{"name":"Greece","nativeName":"Ελλάδα","code":"30"}
+,{"name":"Greenland","nativeName":"Kalaallit Nunaat","code":"299"}
+,{"name":"Grenada","nativeName":"Grenada","code":"1473"}
+,{"name":"Guadeloupe","nativeName":"Guadeloupe","code":"590"}
+,{"name":"Guam","nativeName":"Guam","code":"1671"}
+,{"name":"Guatemala","nativeName":"Guatemala","code":"502"}
+,{"name":"Guernsey","nativeName":"Guernsey","code":"44"}
+,{"name":"Guinea","nativeName":"Guinée","code":"224"}
+,{"name":"Guinea-Bissau","nativeName":"Guiné-Bissau","code":"245"}
+,{"name":"Guyana","nativeName":"Guyana","code":"592"}
+,{"name":"Haiti","nativeName":"Haïti","code":"509"}
+,{"name":"Heard Island and McDonald Islands","nativeName":"Heard Island and McDonald Islands","code":""}
+,{"name":"Holy See","nativeName":"Sancta Sedes","code":"379"}
+,{"name":"Honduras","nativeName":"Honduras","code":"504"}
+,{"name":"Hong Kong","nativeName":"香港","code":"852"}
+,{"name":"Hungary","nativeName":"Magyarország","code":"36"}
+,{"name":"Iceland","nativeName":"Ísland","code":"354"}
+,{"name":"India","nativeName":"भारत","code":"91"}
+,{"name":"Indonesia","nativeName":"Indonesia","code":"62"}
+,{"name":"Côte d'Ivoire","nativeName":"Côte d'Ivoire","code":"225"}
+,{"name":"Iran (Islamic Republic of)","nativeName":"ایران","code":"98"}
+,{"name":"Iraq","nativeName":"العراق","code":"964"}
+,{"name":"Ireland","nativeName":"Éire","code":"353"}
+,{"name":"Isle of Man","nativeName":"Isle of Man","code":"44"}
+,{"name":"Italy","nativeName":"Italia","code":"39"}
+,{"name":"Jamaica","nativeName":"Jamaica","code":"1876"}
+,{"name":"Japan","nativeName":"日本","code":"81"}
+,{"name":"Jersey","nativeName":"Jersey","code":"44"}
+,{"name":"Jordan","nativeName":"الأردن","code":"962"}
+,{"name":"Kazakhstan","nativeName":"Қазақстан","code":"76,77"}
+,{"name":"Kenya","nativeName":"Kenya","code":"254"}
+,{"name":"Kiribati","nativeName":"Kiribati","code":"686"}
+,{"name":"Kuwait","nativeName":"الكويت","code":"965"}
+,{"name":"Kyrgyzstan","nativeName":"Кыргызстан","code":"996"}
+,{"name":"Lao People's Democratic Republic","nativeName":"ສປປລາວ","code":"856"}
+,{"name":"Latvia","nativeName":"Latvija","code":"371"}
+,{"name":"Lebanon","nativeName":"لبنان","code":"961"}
+,{"name":"Lesotho","nativeName":"Lesotho","code":"266"}
+,{"name":"Liberia","nativeName":"Liberia","code":"231"}
+,{"name":"Libya","nativeName":"‏ليبيا","code":"218"}
+,{"name":"Liechtenstein","nativeName":"Liechtenstein","code":"423"}
+,{"name":"Lithuania","nativeName":"Lietuva","code":"370"}
+,{"name":"Luxembourg","nativeName":"Luxembourg","code":"352"}
+,{"name":"Macao","nativeName":"澳門","code":"853"}
+,{"name":"Macedonia (the former Yugoslav Republic of)","nativeName":"Македонија","code":"389"}
+,{"name":"Madagascar","nativeName":"Madagasikara","code":"261"}
+,{"name":"Malawi","nativeName":"Malawi","code":"265"}
+,{"name":"Malaysia","nativeName":"Malaysia","code":"60"}
+,{"name":"Maldives","nativeName":"Maldives","code":"960"}
+,{"name":"Mali","nativeName":"Mali","code":"223"}
+,{"name":"Malta","nativeName":"Malta","code":"356"}
+,{"name":"Marshall Islands","nativeName":"M̧ajeļ","code":"692"}
+,{"name":"Martinique","nativeName":"Martinique","code":"596"}
+,{"name":"Mauritania","nativeName":"موريتانيا","code":"222"}
+,{"name":"Mauritius","nativeName":"Maurice","code":"230"}
+,{"name":"Mayotte","nativeName":"Mayotte","code":"262"}
+,{"name":"Mexico","nativeName":"México","code":"52"}
+,{"name":"Micronesia (Federated States of)","nativeName":"Micronesia","code":"691"}
+,{"name":"Moldova (Republic of)","nativeName":"Moldova","code":"373"}
+,{"name":"Monaco","nativeName":"Monaco","code":"377"}
+,{"name":"Mongolia","nativeName":"Монгол улс","code":"976"}
+,{"name":"Montenegro","nativeName":"Црна Гора","code":"382"}
+,{"name":"Montserrat","nativeName":"Montserrat","code":"1664"}
+,{"name":"Morocco","nativeName":"المغرب","code":"212"}
+,{"name":"Mozambique","nativeName":"Moçambique","code":"258"}
+,{"name":"Myanmar","nativeName":"Myanma","code":"95"}
+,{"name":"Namibia","nativeName":"Namibia","code":"264"}
+,{"name":"Nauru","nativeName":"Nauru","code":"674"}
+,{"name":"Nepal","nativeName":"नेपाल","code":"977"}
+,{"name":"Netherlands","nativeName":"Nederland","code":"31"}
+,{"name":"New Caledonia","nativeName":"Nouvelle-Calédonie","code":"687"}
+,{"name":"New Zealand","nativeName":"New Zealand","code":"64"}
+,{"name":"Nicaragua","nativeName":"Nicaragua","code":"505"}
+,{"name":"Niger","nativeName":"Niger","code":"227"}
+,{"name":"Nigeria","nativeName":"Nigeria","code":"234"}
+,{"name":"Niue","nativeName":"Niuē","code":"683"}
+,{"name":"Norfolk Island","nativeName":"Norfolk Island","code":"672"}
+,{"name":"Korea (Democratic People's Republic of)","nativeName":"북한","code":"850"}
+,{"name":"Northern Mariana Islands","nativeName":"Northern Mariana Islands","code":"1670"}
+,{"name":"Norway","nativeName":"Norge","code":"47"}
+,{"name":"Oman","nativeName":"عمان","code":"968"}
+,{"name":"Pakistan","nativeName":"Pakistan","code":"92"}
+,{"name":"Palau","nativeName":"Palau","code":"680"}
+,{"name":"Palestine, State of","nativeName":"فلسطين","code":"970"}
+,{"name":"Panama","nativeName":"Panamá","code":"507"}
+,{"name":"Papua New Guinea","nativeName":"Papua Niugini","code":"675"}
+,{"name":"Paraguay","nativeName":"Paraguay","code":"595"}
+,{"name":"Peru","nativeName":"Perú","code":"51"}
+,{"name":"Philippines","nativeName":"Pilipinas","code":"63"}
+,{"name":"Pitcairn","nativeName":"Pitcairn Islands","code":"64"}
+,{"name":"Poland","nativeName":"Polska","code":"48"}
+,{"name":"Portugal","nativeName":"Portugal","code":"351"}
+,{"name":"Puerto Rico","nativeName":"Puerto Rico","code":"1787,1939"}
+,{"name":"Qatar","nativeName":"قطر","code":"974"}
+,{"name":"Republic of Kosovo","nativeName":"Republika e Kosovës","code":"383"}
+,{"name":"Réunion","nativeName":"La Réunion","code":"262"}
+,{"name":"Romania","nativeName":"România","code":"40"}
+,{"name":"Russian Federation","nativeName":"Россия","code":"7"}
+,{"name":"Rwanda","nativeName":"Rwanda","code":"250"}
+,{"name":"Saint Barthélemy","nativeName":"Saint-Barthélemy","code":"590"}
+,{"name":"Saint Helena, Ascension and Tristan da Cunha","nativeName":"Saint Helena","code":"290"}
+,{"name":"Saint Kitts and Nevis","nativeName":"Saint Kitts and Nevis","code":"1869"}
+,{"name":"Saint Lucia","nativeName":"Saint Lucia","code":"1758"}
+,{"name":"Saint Martin (French part)","nativeName":"Saint-Martin","code":"590"}
+,{"name":"Saint Pierre and Miquelon","nativeName":"Saint-Pierre-et-Miquelon","code":"508"}
+,{"name":"Saint Vincent and the Grenadines","nativeName":"Saint Vincent and the Grenadines","code":"1784"}
+,{"name":"Samoa","nativeName":"Samoa","code":"685"}
+,{"name":"San Marino","nativeName":"San Marino","code":"378"}
+,{"name":"Sao Tome and Principe","nativeName":"São Tomé e Príncipe","code":"239"}
+,{"name":"Saudi Arabia","nativeName":"العربية السعودية","code":"966"}
+,{"name":"Senegal","nativeName":"Sénégal","code":"221"}
+,{"name":"Serbia","nativeName":"Србија","code":"381"}
+,{"name":"Seychelles","nativeName":"Seychelles","code":"248"}
+,{"name":"Sierra Leone","nativeName":"Sierra Leone","code":"232"}
+,{"name":"Singapore","nativeName":"Singapore","code":"65"}
+,{"name":"Sint Maarten (Dutch part)","nativeName":"Sint Maarten","code":"1721"}
+,{"name":"Slovakia","nativeName":"Slovensko","code":"421"}
+,{"name":"Slovenia","nativeName":"Slovenija","code":"386"}
+,{"name":"Solomon Islands","nativeName":"Solomon Islands","code":"677"}
+,{"name":"Somalia","nativeName":"Soomaaliya","code":"252"}
+,{"name":"South Africa","nativeName":"South Africa","code":"27"}
+,{"name":"South Georgia and the South Sandwich Islands","nativeName":"South Georgia","code":"500"}
+,{"name":"Korea (Republic of)","nativeName":"대한민국","code":"82"}
+,{"name":"South Sudan","nativeName":"South Sudan","code":"211"}
+,{"name":"Spain","nativeName":"España","code":"34"}
+,{"name":"Sri Lanka","nativeName":"śrī laṃkāva","code":"94"}
+,{"name":"Sudan","nativeName":"السودان","code":"249"}
+,{"name":"Suriname","nativeName":"Suriname","code":"597"}
+,{"name":"Svalbard and Jan Mayen","nativeName":"Svalbard og Jan Mayen","code":"4779"}
+,{"name":"Swaziland","nativeName":"Swaziland","code":"268"}
+,{"name":"Sweden","nativeName":"Sverige","code":"46"}
+,{"name":"Switzerland","nativeName":"Schweiz","code":"41"}
+,{"name":"Syrian Arab Republic","nativeName":"سوريا","code":"963"}
+,{"name":"Taiwan","nativeName":"臺灣","code":"886"}
+,{"name":"Tajikistan","nativeName":"Тоҷикистон","code":"992"}
+,{"name":"Tanzania, United Republic of","nativeName":"Tanzania","code":"255"}
+,{"name":"Thailand","nativeName":"ประเทศไทย","code":"66"}
+,{"name":"Timor-Leste","nativeName":"Timor-Leste","code":"670"}
+,{"name":"Togo","nativeName":"Togo","code":"228"}
+,{"name":"Tokelau","nativeName":"Tokelau","code":"690"}
+,{"name":"Tonga","nativeName":"Tonga","code":"676"}
+,{"name":"Trinidad and Tobago","nativeName":"Trinidad and Tobago","code":"1868"}
+,{"name":"Tunisia","nativeName":"تونس","code":"216"}
+,{"name":"Turkey","nativeName":"Türkiye","code":"90"}
+,{"name":"Turkmenistan","nativeName":"Türkmenistan","code":"993"}
+,{"name":"Turks and Caicos Islands","nativeName":"Turks and Caicos Islands","code":"1649"}
+,{"name":"Tuvalu","nativeName":"Tuvalu","code":"688"}
+,{"name":"Uganda","nativeName":"Uganda","code":"256"}
+,{"name":"Ukraine","nativeName":"Україна","code":"380"}
+,{"name":"United Arab Emirates","nativeName":"دولة الإمارات العربية المتحدة","code":"971"}
+,{"name":"United Kingdom of Great Britain and Northern Ireland","nativeName":"United Kingdom","code":"44"}
+,{"name":"United States of America","nativeName":"United States","code":"1"}
+,{"name":"Uruguay","nativeName":"Uruguay","code":"598"}
+,{"name":"Uzbekistan","nativeName":"O‘zbekiston","code":"998"}
+,{"name":"Vanuatu","nativeName":"Vanuatu","code":"678"}
+,{"name":"Venezuela (Bolivarian Republic of)","nativeName":"Venezuela","code":"58"}
+,{"name":"Viet Nam","nativeName":"Việt Nam","code":"84"}
+,{"name":"Wallis and Futuna","nativeName":"Wallis et Futuna","code":"681"}
+,{"name":"Western Sahara","nativeName":"الصحراء الغربية","code":"212"}
+,{"name":"Yemen","nativeName":"اليَمَن","code":"967"}
+,{"name":"Zambia","nativeName":"Zambia","code":"260"}
+,{"name":"Zimbabwe","nativeName":"Zimbabwe","code":"263"}]

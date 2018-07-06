@@ -25,6 +25,22 @@ class AuthenticationHandler{
         
     }
     
+    func loginWithCredential(credential:AuthCredential,success: @escaping (User) -> (),fail: @escaping (Error) -> () ){
+            
+            Auth.auth().signIn(with: credential, completion: { (user, error) in
+                if let error = error {
+                    print("Login error: \(error.localizedDescription)")
+                    fail(error)
+                    
+                }else{
+                    self.getUserWithEmail(id: (user?.uid)!,success: success,fail: fail)
+
+                }
+                
+                
+            })
+    }
+    
     private func getUserWithEmail(id:String, success: @escaping (User) -> (),fail: @escaping (Error) -> ()){
    
         ref = Database.database().reference()
@@ -103,5 +119,6 @@ class AuthenticationHandler{
     
     
     
+
 
 }
