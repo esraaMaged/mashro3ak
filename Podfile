@@ -22,8 +22,11 @@ pod 'JSONModel'
 pod 'Firebase/Database'
 pod 'Firebase/Core'
 pod 'CodableFirebase'
+pod 'FBSDKLoginKit'
+pod 'GoogleSignIn'
 
-
+#dropDown
+pod 'DropDown'
   target 'mashro3kTests' do
     inherit! :search_paths
     # Pods for testing

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: BaseViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
@@ -20,6 +21,16 @@ class ForgotPasswordViewController: UIViewController {
     }
 
     @IBAction func resetPass(_ sender: Any) {
+        if(isValidEmail(testStr: emailTextField.text!)){
+            Auth.auth().sendPasswordReset(withEmail: emailTextField.text!) { error in
+                var text = "An email has been sent to you to reset your password."
+                if((error) != nil){
+                    text = error.debugDescription
+                }
+                self.showAlertWithMessage(msg: text)
+            }
+        }
+       
     }
     
     func isValidEmail(testStr:String) -> Bool {

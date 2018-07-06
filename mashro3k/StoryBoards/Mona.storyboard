@@ -35,13 +35,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Enter your e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjd-eJ-WAE">
-                                <rect key="frame" x="47" y="131" width="281" height="17"/>
+                                <rect key="frame" x="47" y="131" width="281" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D2A-U0-Nsh"/>
+                                </constraints>
                                 <color key="textColor" red="0.098039215690000001" green="0.5568627451" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW2-EC-GQP">
-                                <rect key="frame" x="65" y="248" width="245" height="36"/>
+                                <rect key="frame" x="65" y="281" width="245" height="36"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.5568627451" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="kQ7-UG-reH"/>
