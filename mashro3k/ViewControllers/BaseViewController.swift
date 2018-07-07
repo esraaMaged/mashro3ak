@@ -17,8 +17,23 @@ class BaseViewController: UIViewController , NVActivityIndicatorViewable {
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.orange]
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+       
+        navigationItem.backBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: nil, action: #selector(GoToBack))
+
+
+
+
+
+        
 
     }
+    @objc func GoToBack(){
+        
+        self.navigationController!.popViewController(animated: true)
+        
+    }
+    
+
     
     // MARK: - alert
     func showAlertWithMessage(msg:String){

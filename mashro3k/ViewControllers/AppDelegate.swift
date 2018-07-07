@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
         // Override point for customization after application launch.
         
         //keyboard
-        IQKeyboardManager.sharedManager().enable = true
+//        IQKeyboardManager.sharedManager().enable = true
         
         //dropdown
         DropDown.startListeningToKeyboard()

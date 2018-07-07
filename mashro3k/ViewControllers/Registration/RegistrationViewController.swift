@@ -22,12 +22,23 @@ class RegistrationViewController: BaseViewController {
     let dropDown = DropDown()
     var cititesArr = [Cities()]
     var selectedCityIndex = 0
+    var emailSocial = ""
+    var nameSocial = ""
+    var uid = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUI()
         getCitiesService()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.nameTxtFlf.text = nameSocial
+        self.mailTxtFld.text = emailSocial
+        self.pwdTxtFld.isEnabled = false
+        self.confrimPwdTxtFld.isEnabled = false
     }
 
     // MARK: - inApp
@@ -113,35 +124,59 @@ class RegistrationViewController: BaseViewController {
         else
         {
             startLoading()
-            AuthenticationHandler().registerWithEmail(email: mailTxtFld.text!, password: pwdTxtFld.text!, success: { user in
-                print(user)
-                let userDict : [String : String] = ["id": user,
-                                                    "name": self.nameTxtFlf.text!,
-                                                    "email": self.mailTxtFld.text!,
-                                                    "imageUrl": "",
-                                                    "phoneNumber": self.phoneTxtFld.text!,
-                                                    "countryCode": self.cititesArr[self.selectedCityIndex].code ?? "0",
-                                                    "country": self.cititesArr[self.selectedCityIndex].name ?? "eg"]
-                
-                AuthenticationHandler().register(usersDict: userDict, id: user, success: { user in
+            var userDict : [String : String] = ["id": uid,
+                                                "name": self.nameTxtFlf.text!,
+                                                "email": self.mailTxtFld.text!,
+                                                "imageUrl": "",
+                                                "phoneNumber": self.phoneTxtFld.text!,
+                                                "countryCode": self.cititesArr[self.selectedCityIndex].code ?? "0",
+                                                "country": self.cititesArr[self.selectedCityIndex].name ?? "eg"]
+            if uid != ""{
+                AuthenticationHandler().register(usersDict: userDict, id: uid, success: { user in
                     print(user)
                     self.stopLoading()
                     self.showAlertWithMessage(msg: NSLocalizedString("userRegistered", comment: ""))
-                   // TODO: redirect to mainPage
+                    self.dismiss(animated: true, completion: nil)
+                    // TODO: redirect to mainPage
                 }, fail: { error in
                     print(error)
                     self.stopLoading()
                     self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
-
+                    
                 })
-
-            }, fail: { error in
-                print(error)
-                self.stopLoading()
-                self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
-
-            })
-        } 
+            }else{
+                AuthenticationHandler().registerWithEmail(email: mailTxtFld.text!, password: pwdTxtFld.text!, success: { user in
+                    print(user)
+                     userDict  = ["id": user,
+                                                        "name": self.nameTxtFlf.text!,
+                                                        "email": self.mailTxtFld.text!,
+                                                        "imageUrl": "",
+                                                        "phoneNumber": self.phoneTxtFld.text!,
+                                                        "countryCode": self.cititesArr[self.selectedCityIndex].code ?? "0",
+                                                        "country": self.cititesArr[self.selectedCityIndex].name ?? "eg"]
+                    
+                    AuthenticationHandler().register(usersDict: userDict, id: user, success: { user in
+                        print(user)
+                        self.stopLoading()
+                        self.showAlertWithMessage(msg: NSLocalizedString("userRegistered", comment: ""))
+                        self.dismiss(animated: true, completion: nil)
+                        // TODO: redirect to mainPage
+                    }, fail: { error in
+                        print(error)
+                        self.stopLoading()
+                        self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
+                        
+                    })
+                    
+                }, fail: { error in
+                    print(error)
+                    self.stopLoading()
+                    self.showAlertWithMessage(msg: NSLocalizedString("NetworkError", comment: ""))
+                    
+                })
+            }
+            }
+            
     }
     
     @IBAction func logInBtn(_ sender: Any)
@@ -189,7 +224,7 @@ class RegistrationViewController: BaseViewController {
         return false
     }
     func isValidPhone() -> Bool {
-        let telefonRegex = "\\A[0-9]{12}\\z"
+        let telefonRegex = "\\A[0-9]{11}\\z"
         let phoneTest = NSPredicate(format:"SELF MATCHES %@", telefonRegex)
         return phoneTest.evaluate(with: phoneTxtFld.text!)
     }

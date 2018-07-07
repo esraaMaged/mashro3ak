@@ -19,7 +19,7 @@ class StartPageViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "مشروعك"
+        self.title = "Mashro3ak"
 
         // Do any additional setup after loading the view.
         

@@ -44,10 +44,12 @@ class AuthenticationHandler{
     private func getUserWithEmail(id:String, success: @escaping (User) -> (),fail: @escaping (Error) -> ()){
    
         ref = Database.database().reference()
-        ref.child("users").child("jcyNzdhbvDaZ9fqlKH2akM9ldRN2").observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
-            if snapshot.value == nil{
-               success(User())
+            if snapshot.childrenCount == 0{
+                let user = User()
+                user.id = id
+               success(user)
             }else{
                 do {
                     let value = snapshot.value

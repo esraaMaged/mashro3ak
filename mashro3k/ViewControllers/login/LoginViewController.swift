@@ -13,6 +13,7 @@ import FirebaseAuth
 import FBSDKLoginKit
 import FBSDKCoreKit
 import GoogleSignIn
+import NVActivityIndicatorView
 
 
 class LoginViewController: BaseViewController,GIDSignInDelegate,GIDSignInUIDelegate {
@@ -26,6 +27,10 @@ class LoginViewController: BaseViewController,GIDSignInDelegate,GIDSignInUIDeleg
     @IBOutlet weak var fbBtn: UIButton!
     
     @IBOutlet weak var googleBtn: UIButton!
+    
+    var emailSocial = ""
+    var nameSocial = ""
+    var uid = ""
     
 
     override func viewDidLoad() {
@@ -92,6 +97,7 @@ class LoginViewController: BaseViewController,GIDSignInDelegate,GIDSignInUIDeleg
     @IBAction func fbLogin(_ sender: Any) {
         let fbLoginManager = FBSDKLoginManager()
         fbLoginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self) { (result, error) in
+            print(result)
             if let error = error {
                 print("Failed to login: \(error.localizedDescription)")
                 return
@@ -101,26 +107,46 @@ class LoginViewController: BaseViewController,GIDSignInDelegate,GIDSignInUIDeleg
                 print("Failed to get access token")
                 return
             }
-            
-            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
-            
-            // Perform login by calling Firebase APIs
-            
-            AuthenticationHandler().loginWithCredential(credential: credential, success: { user in
-                print(user)
-                UserDefaults.standard.set(user.id, forKey: "uid")
-                self.pushHome()
-            }, fail: { error in
-                print(error)
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, email, relationship_status"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    let fbDetails = result as! NSDictionary
+                    print(fbDetails)
+                    self.emailSocial = fbDetails.value(forKey: "email") as! String
+                    self.nameSocial = fbDetails.value(forKey: "name") as! String
+                    
+                    let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+                    
+                    // Perform login by calling Firebase APIs
+                    
+                    AuthenticationHandler().loginWithCredential(credential: credential, success: { user in
+                        print(user)
+                        if(user.email == nil){
+                            self.uid = user.id
+                            self.pushRegisteration()
+                        }else{
+                            UserDefaults.standard.set(user.id, forKey: "uid")
+                            self.pushHome()
+                        }
+                        
+                    }, fail: { error in
+                        print(error)
+                    })
+                }else{
+                    print(error)
+                }
             })
+            
+            
           
             
         }
     }
     
     @IBAction func googleLogin(_ sender: Any) {
+        startLoading()
         
         GIDSignIn.sharedInstance().uiDelegate = self
+        
         GIDSignIn.sharedInstance().signIn()
     }
     @IBAction func signUpBtn(_ sender: Any)
@@ -131,18 +157,31 @@ class LoginViewController: BaseViewController,GIDSignInDelegate,GIDSignInUIDeleg
         // ...
         if let error = error {
             // ...
+            self.stopLoading()
             return
         }
+        let guser = user
         
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
-        
         AuthenticationHandler().loginWithCredential(credential: credential, success: { user in
             print(user)
-            UserDefaults.standard.set(user.id, forKey: "uid")
-            self.pushHome()
+            self.stopLoading()
+            if user.email == nil{
+                self.nameSocial = (guser?.profile.name)!
+                self.emailSocial = (guser?.profile.email)!
+                self.uid = user.id
+                self.pushRegisteration()
+                
+            }else{
+                self.stopLoading()
+                UserDefaults.standard.set(user.id, forKey: "uid")
+                self.pushHome()
+            }
+            
         }, fail: { error in
+            self.stopLoading()
             print(error)
         })
         // ...
@@ -151,6 +190,16 @@ class LoginViewController: BaseViewController,GIDSignInDelegate,GIDSignInUIDeleg
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
+    }
+    
+    private func  pushRegisteration(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Register") as! RegistrationViewController
+        nextViewController.nameSocial = nameSocial
+        nextViewController.emailSocial = emailSocial
+        nextViewController.uid = uid
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     private func pushHome(){
@@ -197,6 +246,8 @@ func fillData(){
         }
         
     }
+    
+  
 }
 // MARK: - for padding
 
